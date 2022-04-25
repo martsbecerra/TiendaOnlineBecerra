@@ -8,37 +8,48 @@
     border-radius: 10px;
     color: #227093;
 }
+
 /* GRID INDEX */
 header {
     grid-area: header;
 }
+
 nav {
     grid-area: nav;
 }
+
 section.banner1 {
     grid-area: banner1;
 }
+
 article.mayoristasTxt {
     grid-area: mayoristasTxt;
 }
+
 article.mayoristasImg {
     grid-area: mayoristasImg;
 }
+
 article.minoristasImg {
     grid-area: minoristasImg;
 }
+
 article.minoristasTxt {
     grid-area: minoristasTxt;
 }
+
 section.banner2 {
     grid-area: banner2;
 }
+
 footer {
     grid-area: footer;
 }
+
 div.copyright {
     grid-area: copyright;
 }
+
 .gridIndex {
     display: grid;
     grid-row-gap: 3em;
@@ -55,56 +66,87 @@ div.copyright {
         "footer footer footer"
         "copyright copyright copyright";
 }
+
 /* FIN GRID INDEX */
 /* GRID NOSOTROS */
-article.nosotrosTxt{
+article.nosotrosTxt {
     grid-area: nosotrosTxt;
 }
-article.corazonImg{
+
+article.corazonImg {
     grid-area: corazonImg;
 }
-article.manoImg{
+
+article.manoImg {
     grid-area: manoImg;
 }
-article.publicoTxt{
+
+article.publicoTxt {
     grid-area: publicoTxt;
 }
-.gridNosotros{
+
+.gridNosotros {
     display: grid;
     grid-row-gap: 3em;
     margin: 0 auto;
     grid-template-columns: auto auto;
     grid-template-rows: repeat(8, auto);
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "banner1 banner1"
-    "nosotrosTxt corazonImg"
-    "manoImg publicoTxt"
-    "banner2 banner2"
-    "footer footer"
-    "copyright copyright";
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "banner1 banner1"
+        "nosotrosTxt corazonImg"
+        "manoImg publicoTxt"
+        "banner2 banner2"
+        "footer footer"
+        "copyright copyright";
 }
+
 /* FIN GRID NOSOTROS */
 /* GRID PRODUCTOS */
-section.galeriaContainer{
+section.galeriaContainer {
     grid-area: galeriaContainer;
 }
-.gridProductos{
+
+.gridProductos {
     display: grid;
     grid-row-gap: 3em;
     margin: 0 auto;
     grid-template-columns: auto auto;
     grid-template-rows: repeat(7, auto);
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "banner1 banner1"
-    "galeriaContainer galeriaContainer"
-    "banner2 banner2"
-    "footer footer"
-    "copyright copyright";
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "banner1 banner1"
+        "galeriaContainer galeriaContainer"
+        "banner2 banner2"
+        "footer footer"
+        "copyright copyright";
 }
+
+/* FIN GRID PRODUCTOS */
+/* GRID CONTACTO */
+article.formContacto {
+    grid-area: formContacto;
+}
+
+.gridContacto {
+    display: grid;
+    grid-row-gap: 3em;
+    margin: 0 auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+        "header"
+        "nav"
+        "banner1"
+        "formContacto"
+        "banner2"
+        "footer"
+        "copyright";
+}
+
+/* FIN GRID CONTACTO */
 /* HEADER */
 header {
     display: flex;
@@ -113,40 +155,46 @@ header {
     padding-bottom: 10px;
     background-image: $gradiante;
 }
-nav{
+
+nav {
     margin-bottom: 2rem;
+
     ul {
         li {
-            a{
-                &:hover{
-                border-radius: 0px;
-                text-shadow: black 1px 0 10px;
+            a {
+                &:hover {
+                    border-radius: 0px;
+                    text-shadow: black 1px 0 10px;
                 }
-                &:active{
+
+                &:active {
                     color: white;
                     text-shadow: black 1px 0 10px;
                 }
             }
         }
     }
-    form{
-        button{
-            &:hover{
+
+    form {
+        button {
+            &:hover {
                 text-shadow: black 1px 0 10px;
             }
         }
     }
-    div{
-        div{
-            button{
-                &:hover{
+
+    div {
+        div {
+            button {
+                &:hover {
                     text-shadow: black 1px 0 10px;
                 }
             }
-            a{
-                &:hover{
+
+            a {
+                &:hover {
                     text-shadow: black 1px 0 10px;
-                }  
+                }
             }
         }
     }
@@ -154,15 +202,17 @@ nav{
 
 /* FIN HEADER */
 /* BODY */
-body{
+body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%2341c1ba' fill-opacity='0.33'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
     font-family: 'Oswald', sans-serif;
     background-attachment: scroll;
 }
-section{
+
+section {
     margin-bottom: 2rem;
 }
-article{
+
+article {
     h2 {
         font-size: 35px;
         text-align: center;
@@ -170,9 +220,11 @@ article{
         max-width: 500px;
         margin-bottom: 2rem;
     }
-    h3{
+
+    h3 {
         overflow: hidden;
     }
+
     h4 {
         font-size: 25px;
         text-align: center;
@@ -180,6 +232,7 @@ article{
         max-width: 500px;
         margin-bottom: 2rem;
     }
+
     h6 {
         font-size: 17px;
         text-align: center;
@@ -187,7 +240,25 @@ article{
         max-width: 500px;
         line-height: 30px;
     }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        row-gap: 10px;
+
+        input {
+            border-radius: 5px;
+            padding: 2px;
+        }
+
+        textarea {
+            border-radius: 5px;
+            min-width: 250px;
+        }
+    }
 }
+
 .mayoristasTxt {
     display: flex;
     flex-direction: column;
@@ -197,27 +268,31 @@ article{
     margin-top: 3rem;
     animation-direction: normal;
 }
+
 .mayoristasImg {
     display: flex;
     justify-content: start;
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
+
 .minoristasTxt {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
+
 .minoristasImg {
     display: flex;
     justify-content: end;
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
-.nosotrosTxt{
+
+.nosotrosTxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,19 +300,22 @@ article{
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
+
 .corazonImg {
     display: flex;
     justify-content: start;
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
+
 .manoImg {
     display: flex;
     justify-content: end;
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
-.publicoTxt{
+
+.publicoTxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,36 +323,48 @@ article{
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
-.asesoramientoTxt{
+
+.asesoramientoTxt {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.asesoramientoImg{
+
+.asesoramientoImg {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.productosImg{
+
+.productosImg {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.galeriaContainer{
+
+.galeriaContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 50px;
     column-gap: 200px;
 }
+
+.formContacto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 /* FIN BODY */
 /* FOOTER */
-footer{
+footer {
     margin-bottom: 2rem;
 }
+
 footer {
     display: flex;
     justify-content: center;
@@ -287,6 +377,7 @@ footer {
     border-bottom: 2px $color-letra solid;
     border-radius: 0px;
 }
+
 .redes {
     display: flex;
     flex-direction: column;
@@ -294,6 +385,7 @@ footer {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
 .contacto {
     display: flex;
     flex-direction: column;
@@ -302,9 +394,11 @@ footer {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
 .productosContainer {
     margin-left: 3rem;
 }
+
 .productos {
     display: flex;
     flex-direction: column;
@@ -313,14 +407,17 @@ footer {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
 .copyright {
     display: flex;
     justify-content: center;
     text-align: center;
     color: $color-letra;
 }
+
 /* FIN FOOTER */
-@media (max-width: 768px){
+@media (max-width: 768px) {
+
     /* INDEX */
     .mayoristasImg {
         display: flex;
@@ -328,12 +425,14 @@ footer {
         margin-bottom: 3rem;
         margin-top: 3rem;
     }
+
     .minoristasImg {
         display: flex;
         justify-content: center;
         margin-bottom: 3rem;
         margin-top: 3rem;
     }
+
     .gridIndex {
         display: grid;
         grid-row-gap: 1rem;
@@ -352,6 +451,7 @@ footer {
             "footer"
             "copyright";
     }
+
     /* NOSOTROS */
     .corazonImg {
         display: flex;
@@ -359,30 +459,33 @@ footer {
         margin-bottom: 3rem;
         margin-top: 3rem;
     }
+
     .manoImg {
         display: flex;
         justify-content: center;
         margin-bottom: 3rem;
         margin-top: 3rem;
     }
-    .gridNosotros{
+
+    .gridNosotros {
         display: grid;
         grid-row-gap: 3em;
         margin: 0 auto;
         grid-template-columns: auto;
         grid-template-rows: repeat(10, auto);
-        grid-template-areas: 
-        "header"
-        "nav"
-        "banner1"
-        "nosotrosTxt"
-        "corazonImg"
-        "publicoTxt"
-        "manoImg"
-        "banner2"
-        "footer"
-        "copyright";
+        grid-template-areas:
+            "header"
+            "nav"
+            "banner1"
+            "nosotrosTxt"
+            "corazonImg"
+            "publicoTxt"
+            "manoImg"
+            "banner2"
+            "footer"
+            "copyright";
     }
+
     /* ASESORAMIENTO */
 
     footer {
@@ -392,6 +495,7 @@ footer {
         align-items: center;
         overflow: hidden;
     }
+
     .redes {
         display: flex;
         flex-direction: row;
@@ -401,6 +505,7 @@ footer {
         margin-bottom: 2rem;
         min-width: 210px;
     }
+
     .contacto {
         display: flex;
         justify-content: center;
@@ -411,9 +516,11 @@ footer {
         margin-bottom: 2rem;
         min-width: 210px;
     }
+
     .productosContainer {
         margin-left: 0rem;
     }
+
     .productos {
         display: flex;
         justify-content: center;
