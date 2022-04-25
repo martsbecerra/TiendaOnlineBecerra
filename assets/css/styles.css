@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  border-radius: 10px;
+  color: #227093; }
+
+/* GRID INDEX */
+header {
+  grid-area: header; }
+
+nav {
+  grid-area: nav; }
+
+section.banner1 {
+  grid-area: banner1; }
+
+article.mayoristasTxt {
+  grid-area: mayoristasTxt; }
+
+article.mayoristasImg {
+  grid-area: mayoristasImg; }
+
+article.minoristasImg {
+  grid-area: minoristasImg; }
+
+article.minoristasTxt {
+  grid-area: minoristasTxt; }
+
+section.banner2 {
+  grid-area: banner2; }
+
+footer {
+  grid-area: footer; }
+
+div.copyright {
+  grid-area: copyright; }
+
+.gridIndex {
+  display: grid;
+  grid-row-gap: 3em;
+  margin: 0 auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas: "header header header" "nav nav nav" "banner1 banner1 banner1" "mayoristasTxt mayoristasImg ." ". minoristasImg minoristasTxt" "banner2 banner2 banner2" "footer footer footer" "copyright copyright copyright"; }
+
+/* FIN GRID INDEX */
+/* GRID NOSOTROS */
+article.nosotrosTxt {
+  grid-area: nosotrosTxt; }
+
+article.corazonImg {
+  grid-area: corazonImg; }
+
+article.manoImg {
+  grid-area: manoImg; }
+
+article.publicoTxt {
+  grid-area: publicoTxt; }
+
+.gridNosotros {
+  display: grid;
+  grid-row-gap: 3em;
+  margin: 0 auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas: "header header" "nav nav" "banner1 banner1" "nosotrosTxt corazonImg" "manoImg publicoTxt" "banner2 banner2" "footer footer" "copyright copyright"; }
+
+/* FIN GRID NOSOTROS */
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  background-image: linear-gradient(to left, #2E90A2, #41C1BA, #2E90A2); }
+
+nav {
+  margin-bottom: 2rem; }
+  nav ul li a:hover {
+    border-radius: 0px;
+    text-shadow: black 1px 0 10px; }
+  nav ul li a:active {
+    color: white;
+    text-shadow: black 1px 0 10px; }
+  nav form button:hover {
+    text-shadow: black 1px 0 10px; }
+  nav div div button:hover {
+    text-shadow: black 1px 0 10px; }
+  nav div div a:hover {
+    text-shadow: black 1px 0 10px; }
+
+/* FIN HEADER */
+/* BODY */
+body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%2341c1ba' fill-opacity='0.33'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Oswald', sans-serif;
+  background-attachment: scroll; }
+
+section {
+  margin-bottom: 2rem; }
+
+article h2 {
+  font-size: 35px;
+  text-align: center;
+  overflow: hidden;
+  max-width: 500px;
+  margin-bottom: 2rem; }
+
+article h4 {
+  font-size: 25px;
+  text-align: center;
+  overflow: hidden;
+  max-width: 500px;
+  margin-bottom: 2rem; }
+
+article h6 {
+  font-size: 17px;
+  text-align: center;
+  overflow: hidden;
+  max-width: 500px;
+  line-height: 30px; }
+
+.mayoristasTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  animation-direction: normal; }
+
+.mayoristasImg {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
+.minoristasTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
+.minoristasImg {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
+.nosotrosTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
+.corazonImg {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
+.manoImg {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
+.publicoTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
+.asesoramientoTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.asesoramientoImg {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* FIN BODY */
+/* FOOTER */
+footer {
+  margin-bottom: 2rem; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 17px;
+  color: #227093;
+  margin-top: 3rem;
+  border-top: 2px #227093 solid;
+  border-bottom: 2px #227093 solid;
+  border-radius: 0px; }
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.productosContainer {
+  margin-left: 3rem; }
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #227093; }
+
+/* FIN FOOTER */
+@media (max-width: 768px) {
+  /* INDEX */
+  .mayoristasImg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+  .minoristasImg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+  .gridIndex {
+    display: grid;
+    grid-row-gap: 1rem;
+    margin: 0 auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "header" "nav" "banner1" "mayoristasTxt" "mayoristasImg" "minoristasTxt" "minoristasImg" "banner2" "footer" "copyright"; }
+  /* NOSOTROS */
+  .corazonImg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+  .manoImg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem; }
+  .gridNosotros {
+    display: grid;
+    grid-row-gap: 3em;
+    margin: 0 auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "header" "nav" "banner1" "nosotrosTxt" "corazonImg" "publicoTxt" "manoImg" "banner2" "footer" "copyright"; }
+  /* ASESORAMIENTO */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-width: 210px; }
+  .contacto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 14%;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-width: 210px; }
+  .productosContainer {
+    margin-left: 0rem; }
+  .productos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 14%;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-width: 210px; } }
