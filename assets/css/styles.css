@@ -68,6 +68,18 @@ article.publicoTxt {
   grid-template-areas: "header header" "nav nav" "banner1 banner1" "nosotrosTxt corazonImg" "manoImg publicoTxt" "banner2 banner2" "footer footer" "copyright copyright"; }
 
 /* FIN GRID NOSOTROS */
+/* GRID PRODUCTOS */
+section.galeriaContainer {
+  grid-area: galeriaContainer; }
+
+.gridProductos {
+  display: grid;
+  grid-row-gap: 3em;
+  margin: 0 auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "header header" "nav nav" "banner1 banner1" "galeriaContainer galeriaContainer" "banner2 banner2" "footer footer" "copyright copyright"; }
+
 /* HEADER */
 header {
   display: flex;
@@ -107,6 +119,9 @@ article h2 {
   overflow: hidden;
   max-width: 500px;
   margin-bottom: 2rem; }
+
+article h3 {
+  overflow: hidden; }
 
 article h4 {
   font-size: 25px;
@@ -188,7 +203,21 @@ article h6 {
 .asesoramientoImg {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.productosImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center; }
+
+.galeriaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 50px;
+  column-gap: 200px; }
 
 /* FIN BODY */
 /* FOOTER */
