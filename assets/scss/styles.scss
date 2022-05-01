@@ -259,6 +259,7 @@ article {
     }
 }
 
+// Index
 .mayoristasTxt {
     display: flex;
     flex-direction: column;
@@ -292,6 +293,7 @@ article {
     margin-top: 3rem;
 }
 
+// Nosotros
 .nosotrosTxt {
     display: flex;
     flex-direction: column;
@@ -324,6 +326,7 @@ article {
     margin-top: 3rem;
 }
 
+// Asesoramiento
 .asesoramientoTxt {
     display: flex;
     flex-direction: column;
@@ -345,6 +348,7 @@ article {
     align-items: center;
 }
 
+// Galeria
 .galeriaContainer {
     display: flex;
     flex-wrap: wrap;
@@ -353,6 +357,7 @@ article {
     column-gap: 200px;
 }
 
+// Contacto
 .formContacto {
     display: flex;
     justify-content: center;
@@ -370,7 +375,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    font-size: 17px;
     color: $color-letra;
     margin-top: 3rem;
     border-top: 2px $color-letra solid;
