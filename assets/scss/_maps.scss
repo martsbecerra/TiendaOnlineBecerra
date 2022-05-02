@@ -1,0 +1,10 @@
+$colores: (
+    letra: #227093,
+    logo: #41C1BA,
+    fondo: white,
+);
+
+.copyright{
+    color: map-get($map: $colores, $key: letra);
+    // background-color: map-get($map: $colores, $key: fondo); utilizo a modo de ejemplo para otra utilización, aunque no me sirve en mi proyecto.
+}

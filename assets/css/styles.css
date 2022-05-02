@@ -16,6 +16,9 @@
   justify-content: end;
   margin: 3rem 0rem; }
 
+.copyright {
+  color: #227093; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -251,8 +254,7 @@ footer {
 .copyright {
   display: flex;
   justify-content: center;
-  text-align: center;
-  color: #227093; }
+  text-align: center; }
 
 /* FIN FOOTER */
 @media (max-width: 768px) {

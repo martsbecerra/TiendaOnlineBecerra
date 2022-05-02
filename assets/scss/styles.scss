@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./extend";
 @import "./mixins";
+@import "./maps";
 
 * {
     box-sizing: border-box;
@@ -347,7 +348,6 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    color: $color-letra;
 }
 
 /* FIN FOOTER */
