@@ -1,0 +1,14 @@
+@mixin flexboxImg($displayFlex, $ubiRow, $margin) {
+    display: $displayFlex;
+    justify-content: $ubiRow;
+    margin: $margin;
+}
+
+.mayoristasImg, .corazonImg {
+    @include flexboxImg(flex, start, 3rem 0rem)
+}
+
+.minoristasImg, .manoImg {
+    @include flexboxImg(flex, end, 3rem 0rem)
+}
+

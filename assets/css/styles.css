@@ -1,3 +1,21 @@
+.texto, .mayoristasTxt, .minoristasTxt, .nosotrosTxt, .publicoTxt, .asesoramientoTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
+
+.mayoristasImg, .corazonImg {
+  display: flex;
+  justify-content: start;
+  margin: 3rem 0rem; }
+
+.minoristasImg, .manoImg {
+  display: flex;
+  justify-content: end;
+  margin: 3rem 0rem; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -163,74 +181,12 @@ article form {
     border-radius: 5px;
     min-width: 250px; }
 
-.mayoristasTxt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-  animation-direction: normal; }
-
-.mayoristasImg {
-  display: flex;
-  justify-content: start;
-  margin-bottom: 3rem;
-  margin-top: 3rem; }
-
-.minoristasTxt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-  margin-top: 3rem; }
-
-.minoristasImg {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 3rem;
-  margin-top: 3rem; }
-
-.nosotrosTxt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-  margin-top: 3rem; }
-
-.corazonImg {
-  display: flex;
-  justify-content: start;
-  margin-bottom: 3rem;
-  margin-top: 3rem; }
-
-.manoImg {
-  display: flex;
-  justify-content: end;
-  margin-bottom: 3rem;
-  margin-top: 3rem; }
-
-.publicoTxt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-  margin-top: 3rem; }
-
-.asesoramientoTxt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
 .asesoramientoImg {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 3rem 0rem; }
 
 .productosImg {
   display: flex;

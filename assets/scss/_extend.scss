@@ -1,0 +1,14 @@
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+
+.mayoristasTxt, .minoristasTxt, .nosotrosTxt, .publicoTxt, .asesoramientoTxt{
+    @extend .texto;
+}
+

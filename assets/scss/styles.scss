@@ -1,4 +1,6 @@
-@import "variables";
+@import "./variables";
+@import "./extend";
+@import "./mixins";
 
 * {
     box-sizing: border-box;
@@ -6,7 +8,7 @@
     padding: 0;
     overflow: auto;
     border-radius: 10px;
-    color: #227093;
+    color: $color-letra;
 }
 
 /* GRID INDEX */
@@ -259,87 +261,17 @@ article {
     }
 }
 
-// Index
-.mayoristasTxt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    animation-direction: normal;
-}
-
-.mayoristasImg {
-    display: flex;
-    justify-content: start;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-}
-
-.minoristasTxt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-}
-
-.minoristasImg {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-}
-
-// Nosotros
-.nosotrosTxt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-}
-
-.corazonImg {
-    display: flex;
-    justify-content: start;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-}
-
-.manoImg {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-}
-
-.publicoTxt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-}
-
 // Asesoramiento
-.asesoramientoTxt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .asesoramientoImg {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 3rem 0rem;
 }
+
+// Productos
 
 .productosImg {
     display: flex;
@@ -348,7 +280,6 @@ article {
     align-items: center;
 }
 
-// Galeria
 .galeriaContainer {
     display: flex;
     flex-wrap: wrap;
