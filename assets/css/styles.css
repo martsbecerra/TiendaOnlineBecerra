@@ -121,7 +121,7 @@ header {
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
-  background-image: linear-gradient(to left, #2E90A2, #41C1BA, #2E90A2); }
+  background-image: linear-gradient(to left, #227093, #41C1BA, #227093); }
 
 nav {
   margin-bottom: 2rem; }
@@ -148,7 +148,7 @@ body {
 section {
   margin-bottom: 2rem; }
 
-article h2 {
+article h1 {
   font-size: 35px;
   text-align: center;
   overflow: hidden;
