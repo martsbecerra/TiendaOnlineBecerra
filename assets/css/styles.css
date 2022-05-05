@@ -120,7 +120,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
+  padding: 2px 0px;
   background-image: linear-gradient(to left, #227093, #41C1BA, #227093); }
 
 nav {
