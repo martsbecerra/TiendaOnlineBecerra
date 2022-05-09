@@ -171,6 +171,8 @@ body {
 
 section {
   margin-bottom: 2rem; }
+  section article a:hover {
+    box-shadow: black 1px 0 10px; }
 
 article h1 {
   font-size: 35px;

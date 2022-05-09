@@ -203,6 +203,8 @@ nav {
     }
 }
 
+
+
 /* FIN HEADER */
 /* BOTON DE WHATSAPP */
 .float {
@@ -238,8 +240,15 @@ body {
     background-attachment: scroll;
 }
 
-section {
+section{
     margin-bottom: 2rem;
+    article{
+        a{
+            &:hover{
+                box-shadow: black 1px 0 10px;
+            }
+        }
+    }
 }
 
 
